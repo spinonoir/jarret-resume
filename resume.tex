@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:jarretspino@gmail.com}{jarretspino@gmail.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jarret Spino} \\ \vspace{1pt}
+    \small 626-236-0176 $|$ \href{mailto:jarretspino@gmail.com}{\underline{jarretspino@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jspino}{\underline{linkedin.com/in/jspino}} $|$
+    \href{https://github.com/spinonoir}{\underline{github.com/spinonoir}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Master of Science, Computer Science}{Jan 2022 -- Present}
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Bachelor of Science, Computer Science}{Jan 2020 -- Present}
+    \resumeSubheading
+      {Pasadena City College}{Pasadena, CA}
+      {Applied Mathematics for Transfer}{Aug 2018 -- Dec 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Head Course Producer}{Jan 2022 -- Present}
+      {University of Southern California}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Manage a team of 25 undergrad and graduate students including setting schedules, assigning roles and responsibilities, providing feedback, and delegating tasks.}
+        \resumeItem{Maintain a staff slack channel for regular communications outside of weekly staff meetings.}
+        \resumeItem{Setup and monitor the course website, grading platform, and message board and ensure they are continuously monitored by course staff so that student questions are answered expeditiously.}
+        \resumeItem{Assist students with questions related to the design and analysis of algorithms. Focus on greedy, divide and conquer, dynamic programming strategies as well as problems related to network flow and tractability.}
+        \resumeItem{Design homework and exam problems related the materials that have been taught in lecture, and audit the graders of those problems to ensure the correct concepts are being evaluated.}
+        \resumeItem{Grade homework assignments and exams while providing detailed feedback on the proper techniques to be used in cases where a deep understanding of the concepts is not demonstrated.}
+        \resumeItem{Maintain a guide for how future head course producers of CSCI 270 to follow once I graduate.}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Information Technology Support Specialist}{Jun 2008 -- Jul 2013}
+      {University of Texas at Austin, Department of Computer Science}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Maintained all departmentally owned laptops, including software and hardware support.}
+        \resumeItem{Responsible for ensuring all mobile devices owned by the department met state mandated encryption policies.}
+        \resumeItem{Provided complete hardware support for all departmentally owned servers, desktops and laptops. Certified Dell technician, certified Apple technician.}
+        \resumeItem{Fielded requests for departmental network connections, including running cables and configuring Cisco switches, DNS, and departmental database of machines.}
+  %      \resumeItem{Point contact for all departmental audio/video requests. Maintained classroom and auditorium projectors and video equipment.}
+    \resumeItemListEnd
+
+  
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Real Time Polyp Detection} $|$ \emph{Python, PyTorch, numpy, git, jupyter, pandas, OpenCV}}{Jan 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Initial project goal was to analyze the effectiveness of transfer learning with pretrained models}
+            \resumeItem{Researched potential applications and decided on a model that could be used to assist clinicians with polyp detection during colonoscopy procedures}
+            \resumeItem{Compiled a dataset of over 43k frames taken from live colonoscopy procedures and partioned the data into splits that ensured there was no data leakage between training, validation, and test sets}
+            \resumeItem{Responsible for the data pipeline as well as the design, training, and fine-tuning of the FasterRCNN model}
+            \resumeItem{Built out the model with replicability in mind, including a configuration file that can be used to easily change hyperparameters and a training script that can be used to train the model on any dataset}
+        \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{CV4QA} $|$ \emph{Python, Huggingface, PyTorch, Pandas, numpy, git, jupyter}}{Aug 2022 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Worked with large chip manufacturer and my team at USC to develop an end to end pipeline for identifying chip defects using computer vision}
+            \resumeItem{Researched various models and hardware requirements for effective detection of defects at small scale and designed an equipment setup that would meet these requirements}
+            \resumeItem{Currently working with USC team to make use of pre-trained image models and transfer learning for identifying chip components on board. Component identification is the first towards defect flagging.}
+            \resumeItem{Our team designed a capture process for companies current workforce to capture and send us labeled examples of defects for training our model}
+            \resumeItem{Tasked with designing deep learning/transfer learning for vision side project for our team to work with while we wait for new batches of labeled data from client}
+            \resumeItem{Project concluded with the client having a better understanding of the requirements for a successful defect detection pipeline and our team having a better understanding of the challenges that come with working with a client}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{EasyTeamUp} $|$ \emph{Python, Flask, Android Studio, GitHub, Java, Firebase, Google Cloud}}{Jan 2022 -- May 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an Android application for scheduling meetings among groups of USC students.}
+            \resumeItem{Designed an efficient, multi-threaded, scalable algorithm for optimal scheduling of many participants with various user-defined schedules.}
+            \resumeItem{Configured and deployed Python flask server to Google Cloud.}
+            \resumeItem{Assisted with the development of Firebase back-end for managing user data.}
+            \resumeItem{Responsible for testing application throughout development using testing suites such as Mockito.}
+            \resumeItem{Won best project for the design and implementation of EasyTeam Up.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Curriculum VitAI} $|$ \emph{Java, React, MongoDB, Amazon Web Services, GitHub, OpenAI, }}{Aug 2021 -- Dec 2021}
+          \resumeItemListStart
+            \resumeItem{Lead a team of six students in the design, development, and implementation of an AI-assisted resume creation website.}
+            \resumeItem{Responsible for writing back-end API calls to OpenAI. Selected appropriate training data for AI generated job descriptions and user profiles.}
+            \resumeItem{In charge of back-end functionality as well as developing the API to link front-end and back-end end components.}
+            \resumeItem{Project is now used as the example for how to successfully execute the Software Development project for the course.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL, MongoDB, Matlab, Mathematica, R, HTML, Rust} \\
+     \textbf{Frameworks}{: React, Gradle, Flask, JUnit, WordPress, Material-UI, Apache, Unity} \\
+     \textbf{Developer Tools}{: Git, Docker, Amazon Web Services, Microsoft Azure, Paperspace, Google Cloud Platform, VS Code, Visual Studio, Android Studio, Jupyter, PyCharm, IntelliJ, DataSpell, CLion, Eclipse, Postman, Perforce, Cygwin} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, TensorFlow, Keras, PyTorch, Lightning, OpenCV, HuggingFace, Scikit-Learn, SciPy, OpenAI, Transformers, Flask, Django, Pytest, Mockito, JUnit, Jupyter, Matplotlib, Seaborn, Plotly, Scikit-Video}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
